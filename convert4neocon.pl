@@ -21,7 +21,7 @@ sub main {
 
 sub write_snippet {
     my ( $lang, $snippet, $output_dir ) = @_;
-    my $file = file( $output_dir, "${lang}.snippet" );
+    my $file = file( $output_dir, "${lang}.snip" );
     my $fh = $file->openw;
     $fh->print($snippet);
     $fh->close;
